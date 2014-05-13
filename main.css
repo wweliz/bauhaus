@@ -6,22 +6,40 @@ body {
     background: #f0ede8;
 }
 
+a, a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#006A7D;
+	text-decoration: underline;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+
 .header-whole {
 	background: url('images/kandinsky.jpg') no-repeat;
-box-shadow: inset 0px 0px 0 2000px rgba(255,255,255,0.625);
+	box-shadow: inset 0px 0px 0 2000px rgba(255,255,255,0.625);
 	background-size: cover;
 	height: 250px;
 	width: 100%;
 	display: block;
 	margin-top: 0;
-    margin-right: auto;
-    margin-left: auto;
-    vertical-align: middle;
-    position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+  vertical-align: middle;
+  position: relative;
 }
 
 .header-whole p {
-	font-size: 150px;
+	font-size: 105px;
 	line-height: 250px;
 	padding: 0;
 	margin: 0;
@@ -37,9 +55,14 @@ box-shadow: inset 0px 0px 0 2000px rgba(255,255,255,0.625);
 .sidebar {
 	position: absolute;
 	width: 300px;
+	height: 236px;
 	top: 0;
 	bottom: 0;
 	background: #b6c7ca;
+}
+
+.bauhausman {
+	margin: 25px;
 }
 
 .content {
@@ -53,12 +76,9 @@ box-shadow: inset 0px 0px 0 2000px rgba(255,255,255,0.625);
 .circle {
 	height: 85px;
 	width: 85px;
-	border-style: solid;
-	border-color: #b6c7ca;
 	border-radius: 50%;
-	margin-top: 5px;
 	margin-right: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	margin-left: 5px;
 	display: inline-block;
 	opacity: 0.5;
@@ -68,4 +88,22 @@ box-shadow: inset 0px 0px 0 2000px rgba(255,255,255,0.625);
 
 .circle:hover {
 	opacity:1;
+	-webkit-transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+}
+
+.footer-box {
+	background: #b6c7ca;
+	height: 75px;
+	width: 100%;
+	line-height: 75px;
+	color: #000000;
+	position: absolute;
+	bottom: 0;
+}
+
+.footer-box p {
+	margin: 0;
 }

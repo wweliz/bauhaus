@@ -2900,16 +2900,21 @@ var items =[
    }
 ]
 
-
-
-
 var firstPart = '<div style="background-image: url('
 var lastPart = ') " class="circle"></div>' 
  
 items.forEach(function(item){
-  item.Images.forEach(function(image){
-    var totalString = firstPart + image.url_170x135 + lastPart
+  var totalString = firstPart + item.Images[0].url_170x135 + lastPart
     $('.content').append(totalString)
   })
-})
+
+// var firstPart = '<div style="background-image: url('
+// var lastPart = ') " class="circle"></div>' 
+ 
+// items.forEach(function(item){
+//   item.Images[0].forEach(function(image){
+//     var totalString = firstPart + image.url_170x135 + lastPart
+//     $('.content').append(totalString)
+//   })
+// })
 
