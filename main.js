@@ -2900,21 +2900,43 @@ var items =[
    }
 ]
 
+// Function below displays images in circles
 var firstPart = '<div style="background-image: url('
 var lastPart = ') " class="circle"></div>' 
- 
+
 items.forEach(function(item){
   var totalString = firstPart + item.Images[0].url_170x135 + lastPart
     $('.content').append(totalString)
   })
 
-// var firstPart = '<div style="background-image: url('
-// var lastPart = ') " class="circle"></div>' 
- 
-// items.forEach(function(item){
-//   item.Images[0].forEach(function(image){
-//     var totalString = firstPart + image.url_170x135 + lastPart
-//     $('.content').append(totalString)
-//   })
+// Function below warns that currency is in €
+// $('.circle').click(function() {
+//    items.forEach(function(item) {
+//       if (item.currency_code == "EUR") {
+//          $('.sidebarReturn').text ('This price is in euros.');
+//       }
+//    })})
+
+
+// $('.circle').click(function() {
+//       $('this').text ('items.price');
+//    })})
+
+
+// Function below xxxx
+// $('.circle').click(function() {
+//    $('.sidebarReturn').text ('texthere');
 // })
 
+
+
+
+
+
+
+
+// items.forEach(function(item){
+//   item.Images.forEach(function(image){
+//   $('.container').append('<div style="background: #' + image.hex_code + '" ; class="box">')
+//   })
+// });

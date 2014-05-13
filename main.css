@@ -55,15 +55,17 @@ ul {
 .sidebar {
 	position: absolute;
 	width: 300px;
-	height: 236px;
+	min-height: 236px;
 	top: 0;
 	bottom: 0;
 	background: #b6c7ca;
 }
 
-.bauhausman {
-	margin: 25px;
+.sidebarReturn {
+	padding-top: 236px;
 }
+
+.bauhausman {margin: 25px;}
 
 .content {
 	text-align: center;
